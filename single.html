@@ -1,0 +1,354 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>ⒶDIGITAL STORE♛</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+	<link rel="icon" href="images/favicon.ico" type="image/ico">
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+     <!----details-product-slider--->
+				<!-- Include the Etalage files -->
+					<link rel="stylesheet" href="css/etalage.css">
+					<script src="js/jquery.etalage.min.js"></script>
+				<!-- Include the Etalage files -->
+				<script>
+						jQuery(document).ready(function($){
+			
+							$('#etalage').etalage({
+								thumb_image_width: 300,
+								thumb_image_height: 400,
+								
+								show_hint: true,
+								click_callback: function(image_anchor, instance_id){
+									alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+								}
+							});
+							// This is for the dropdown list example:
+							$('.dropdownlist').change(function(){
+								etalage_show( $(this).find('option:selected').attr('class') );
+							});
+
+					});
+				</script>
+				<!----//details-product-slider--->	
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="images/logo.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li class="current"><a href="shop.html">Comprar</a></li>
+						    	<li><a href="team.html"></a></li>
+						    	<li><a href="shop.html">Eventos</a></li>
+						    	<li><a href="experiance.html">Productos</a></li>
+						    	<li><a href="shop.html"></a></li>
+								<li><a href="contact.html">Contacto</a></li>								
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				   <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+				    <ul class="icon1 sub-icon1 profile_img">
+					 <li><a class="active-icon c1" href="#"> </a>
+						<ul class="sub-icon1 list">
+						  <div class="product_control_buttons">
+						  	<a href="#"><img src="images/edit.png" alt=""/></a>
+						  		<a href="#"><img src="images/close_edit.png" alt=""/></a>
+						  </div>
+						   <div class="clear"></div>
+						  <li class="list_img"><img src="images/1.jpg" alt=""/></li>
+						  <li class="list_desc"><h4><a href="#">Audifonos Gamer</a></h4><span class="actual">1 x
+                          $130.200</span></li>
+						  <div class="login_buttons">
+							 <div class="check_button"><a href="checkout.html">Verificar</a></div>
+							 <div class="login_button"><a href="login.html">Acceso</a></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="clear"></div>
+						</ul>
+					 </li>
+				   </ul>
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 single_left">
+				   <div class="single_image">
+					     <ul id="etalage">
+							<li>
+								<a href="optionallink.html">
+									<img class="etalage_thumb_image" src="images/3.jpg" />
+									<img class="etalage_source_image" src="images/3.jpg" />
+								</a>
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/4.jpg" />
+								<img class="etalage_source_image" src="images/4.jpg" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/5.jpg" />
+								<img class="etalage_source_image" src="images/5.jpg" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/6.jpg" />
+								<img class="etalage_source_image" src="images/6.jpg" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/7.jpg" />
+								<img class="etalage_source_image" src="images/7.jpg" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/8.jpg" />
+								<img class="etalage_source_image" src="images/8.jpg" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/9.jpg" />
+								<img class="etalage_source_image" src="images/9.jpg" />
+							</li>
+						</ul>
+					    </div>
+				        <!-- end product_slider -->
+				        <div class="single_right">
+				        	<h3>AudÍfonos de Diadema TRUST Alámbricos On Ear Gaming Radius Gxt 310C Para PC, PS5/PS4, Xbox Series X, Switch, Mobile Verde Camuflado </h3>
+				        	<p class="m_10">Cómodos auriculares de oreja para juegos con micrófono ajustable y potente sonido
+								Suaves y cómodas almohadillas para las orejas
+								Micrófono y banda para la cabeza ajustables
+								Cable fijo de 1 m, y 50 cm de cable de extensión para consola
+								Cable adaptador de 1 m para PC/ordenador portátil</p>
+				        	<ul class="options">
+								<h4 class="m_12">Seleccione el tamaño(cm)</h4>
+								<li><a href="#">50cm</a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+							</ul>
+				        	<ul class="product-colors">
+								<h3>Colores Disponibles</h3>
+								<li><a class="color1" href="#"><span> </span></a></li>
+								<li><a class="color2" href="#"><span> </span></a></li>
+								<li><a class="color3" href="#"><span> </span></a></li>
+								<li><a class="color4" href="#"><span> </span></a></li>
+								<li><a class="color5" href="#"><span> </span></a></li>
+								<li><a class="color6" href="#"><span> </span></a></li>
+								<div class="clear"> </div>
+							</ul>
+							<div class="btn_form">
+							   <form>
+								 <input type="submit" value="Comprar ahora" title="">
+							  </form>
+							</div>
+							<ul class="add-to-links">
+    			              <li><img src="images/wish.png" alt=""><a href="#">Añadir a la lista de deseos</a></li>
+    			            </ul>
+							<div class="social_buttons">
+								<h4>95 Articulos</h4>
+								<button type="button" class="btn1 btn1-default1 btn1-twitter" onclick="">
+					              <i class="icon-twitter"></i> Tweet
+					            </button>
+					            <button type="button" class="btn1 btn1-default1 btn1-facebook" onclick="">
+					              <i class="icon-facebook"></i> Share
+					            </button>
+					             <button type="button" class="btn1 btn1-default1 btn1-google" onclick="">
+					              <i class="icon-google"></i> Google+
+					            </button>
+					            <button type="button" class="btn1 btn1-default1 btn1-pinterest" onclick="">
+					              <i class="icon-pinterest"></i> Pinterest
+					            </button>
+					        </div>
+				        </div>
+				        <div class="clear"> </div>
+				</div>
+				<div class="col-md-3">
+				  <div class="box-info-product">
+					<p class="price2">$130.200</p>
+					       <ul class="prosuct-qty">
+								<span>Cantidad:</span>
+								<select>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+								</select>
+							</ul>
+							<button type="submit" name="Submit" class="exclusive">
+							   <span>Añadir Al Carrito</span>
+							</button>
+				   </div>
+			   </div>
+			</div>		
+			<div class="desc">
+			   	<h4>Descripcion</h4>
+			   	<p>Los Auriculares Gamer Trust GXT 310C Radius son la puerta de entrada al rugiente reino de los juegos. Estos auriculares camuflados cuentan con sonido nítido y envolvente para que siempre estés un paso por delante de tus enemigos. Son compatibles con PC, portátiles y Consolas. Está Diadema está equipada con potentes altavoces de 40 mm, con un micrófono ajustable que asegura un sonido claro y el confort de las suaves almohadillas para colocar sobre las orejas que te brindaran la comodidad necesaria para las prolongadas sesiones de juegos.¡Estás listo para convertirte en el próximo campeón!</p>
+			</div>
+			<div class="row">
+				<h4 class="m_11">PRODUCTOS RELACIONADOS EN ESTA CATEGORIA</h4>
+				<div class="col-md-4 product1">
+					<img src="images/s1.jpg" class="img-responsive" alt=""/> 
+					<div class="shop_desc"><a href="single.html">
+						</a><h3><a href="single.html"></a><a href="#">Computador Portátil Gamer MSI GF63 15.6" Pulgadas 12UCX Intel Ci5 - RAM 8GB - Disco SDD 512 GB - Negro</a></h3>
+						<p>Incluye Morral
+							Fluida pantalla de 15.6" y 144Hz de tasa de refresco
+							Revolucionaria refrigeración a medida Cooler Boost </p>
+						<span class="reducedfrom">$4.199.000</span>
+						<span class="actual">$2.999.000</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="#">Añadir Al Carrito</a></li>
+							<li class="shop_btn"><a href="#">Leer Mas</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</div>
+				<div class="col-md-4 product1">
+					<img src="images/s2.jpg" class="img-responsive" alt=""/> 
+					<div class="shop_desc"><a href="single.html">
+						</a><h3><a href="single.html"></a><a href="#">Juego PS5 Call Of Duty Modern Warfare III</a></h3>
+						<p>	Incluye Lote multigeneración de Call of Duty® MW® III
+							Incluye las versiones del juego para PS4 y PS5
+							Regreso y evolución modo Guerra que debutó en Call of Duty </p>
+						<span class="reducedfrom">$480.900</span>
+						<span class="actual">$350.500</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="#">Añadir Al Carrito</a></li>
+							<li class="shop_btn"><a href="#">Leer Mas</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</div>
+				<div class="col-md-4">
+					<img src="images/s3.jpg" class="img-responsive" alt=""/> 
+					<div class="shop_desc"><a href="single.html">
+						</a><h3><a href="single.html"></a><a href="#">TV KALLEY 32" Pulgadas 81 cm TV32HDG HD LED</a></h3>
+						<p>Pantalla 32" HD, excelente imagen y contraste
+							Usa tu TV como reproductor multimedia desde USB
+							Conecta tus dispositivos Favoritos via HDMI
+							Gran Respaldo con 2 años de Garantía </p>
+						<span class="reducedfrom">$829.000</span>
+						<span class="actual">$549.000</span><br>
+						<ul class="buttons">
+							<li class="cart"><a href="#">Añadir Al Carrito</a></li>
+							<li class="shop_btn"><a href="#">Leer Mas</a></li>
+							<div class="clear"> </div>
+					    </ul>
+				    </div>
+				</div>
+			</div>	
+	     </div>
+	   </div>
+	  </div>
+	  <div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+						
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Promociones</h4>
+							<div class="footer_search">
+				    		   <form>
+				    			<input type="text" value="Ingrese su correo electronico" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Ingrese su correo...';}">
+				    			<input type="submit" value="Ir">
+				    		   </form>
+					        </div>
+																  				
+						    </ul>
+		   				</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+						<p>©  <a href="https://www.facebook.com/Anderson.conde.LH" target="_blank">TheConde</a></p>
+		            </div>
+					  <dl id="sample" class="dropdown">
+				        
+				            </ul>
+				         </dd>
+	   				  </dl>
+   				</div>
+			</div>
+		</div>
+</body>	
+</html>

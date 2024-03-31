@@ -1,0 +1,315 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>ⒶDIGITAL STORE♛</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+	<link rel="icon" href="images/favicon.ico" type="image/ico">
+<link rel="stylesheet" href="css/fwslider.css" media="all">
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/fwslider.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="images/logo.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li><a href="shop.html">Comprar</a></li>
+						    	<li><a href="team.html"></a></li>
+						    	<li><a href="experiance.html">Eventos</a></li>
+						    	<li><a href="experiance.html">Productos</a></li>
+						    	<li><a href="shop.html"></a></li>
+								<li><a href="contact.html">Contacto</a></li>								
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		
+				      <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Busque su producto" type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+						
+				    <ul class="icon1 sub-icon1 profile_img">
+					 <li><a class="active-icon c1" href="#"> </a>
+						<ul class="sub-icon1 list">
+						  <div class="product_control_buttons">
+						  	<a href="#"><img src="images/edit.png" alt=""/></a>
+						  		<a href="#"><img src="images/close_edit.png" alt=""/></a>
+						  </div>
+						   <div class="clear"></div>
+						  <li class="list_img"><img src="images/1.jpg" alt=""/></li>
+						  <li class="list_desc"><h4><a href="#">Audifonos Gamer</a></h4><span class="actual">1 x
+                          $12.00</span></li>
+						  <div class="login_buttons">
+							 <div class="check_button"><a href="checkout.html">Verificar</a></div>
+							 <div class="login_button"><a href="login.html">Acceso</a></div>
+							 <div class="clear"></div>
+						  </div>
+						  <div class="clear"></div>
+						</ul>
+					 </li>
+				   </ul>
+		           <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	</div>
+	<div class="banner">
+	<!-- start slider -->
+       <div id="fwslider">
+         <div class="slider_container">
+            <div class="slide"> 
+            
+               <img src="images/slider1.jpg" class="img-responsive" alt=""/>
+               
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        
+                        <h1 class="title">DIGITAL<br>STORE♛</h1>
+                        
+                        <div class="button"><a href="#">Ver mas</a></div>
+                    </div>
+                </div>
+               <!-- Anderson COnde -->
+            </div>
+          
+            <div class="slide">
+               <img src="images/slider2.jpg" class="img-responsive" alt=""/>
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        <h1 class="title">TIENDA<br>ONLINE</h1>
+                       	<div class="button"><a href="#">Ver mas</a></div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        <div class="timers"></div>
+        <div class="slidePrev"><span></span></div>
+        <div class="slideNext"><span></span></div>
+       </div>
+      
+      </div>
+	  <div class="main">
+		<div class="content-top">
+			<h2>Consolas</h2>
+			<p>Encuentra todo tipo de consolas en un buen precio</p>
+			<div class="close_but"><i class="close1"> </i></div>
+				<ul id="flexiselDemo3">
+				<li><img src="images/board1.jpg" /></li>
+				<li><img src="images/board2.jpg" /></li>
+				<li><img src="images/board3.jpg" /></li>
+				<li><img src="images/board4.jpg" /></li>
+				<li><img src="images/board5.jpg" /></li>
+			</ul>
+		<h3>XBOX 360, PLAY STATION, JUEGOS, TV'S </h3>
+			<script type="text/javascript">
+		$(window).load(function() {
+			$("#flexiselDemo3").flexisel({
+				visibleItems: 5,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+		    	responsiveBreakpoints: { 
+		    		portrait: { 
+		    			changePoint:480,
+		    			visibleItems: 1
+		    		}, 
+		    		landscape: { 
+		    			changePoint:640,
+		    			visibleItems: 2
+		    		},
+		    		tablet: { 
+		    			changePoint:768,
+		    			visibleItems: 3
+		    		}
+		    	}
+		    });
+		    
+		});
+		</script>
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		</div>
+	</div>
+	<div class="content-bottom">
+		<div class="container">
+			<div class="row content_bottom-text">
+			  <div class="col-md-7">
+				<h3>ZONA<br>GAMING</h3>
+				<p class="m_1">"¡Bienvenido a Zona Gaming, tu destino definitivo para todo lo relacionado con el mundo del gaming! Explora nuestra amplia selección de productos de última generación, desde potentes PC gaming hasta consolas de última generación, periféricos de alta tecnología, y una variedad de accesorios para llevar tu experiencia de juego al siguiente nivel. ¡Sumérgete en el universo del gaming con Zona Gaming y descubre un mundo lleno de emoción, competición y diversión sin límites!"</p> 
+				<p>©  <a href="https://www.facebook.com/Anderson.conde.LH" target="_blank">TheConde</a></p>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="features">
+		<div class="container">
+			<h3 class="m_3">COMPUTADORES PORTATILES</h3>
+			<div class="close_but"><i class="close1"> </i></div>
+			  <div class="row">
+				<div class="col-md-3 top_box">
+				  <div class="view view-ninth"><a href="single.html">
+                    <img src="images/pic1.jpg" class="img-responsive" alt=""/>
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                      <div class="content">
+                        <h2>Computador Portátil Gamer ASUS TUF </h2>
+                        <p> 15'6 Pulgadas FX507ZC4 - Intel Core i5 - RAM 8GB - Disco SSD 512 GB - Gris</p>
+                      </div>
+                   </a> </div
+                  </div>
+                  <h4 class="m_4"><a href="#">ASUS TUF GAMING</a></h4>
+                  <p class="m_5">El ASUS TUF Gaming F15F es un resistente portátil gamer que te entregará todo lo que necesitas para ganar, gracias a su pantalla de alta velocidad, sistema térmico mejorado y batería de alta duración. </p>
+                </div>
+                <div class="col-md-3 top_box">
+					<div class="view view-ninth"><a href="single.html">
+                    <img src="images/pic2.jpg" class="img-responsive" alt=""/>
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                      <div class="content">
+                        <h2>Computador Portátil HP Pavilion</h2>
+                        <p>15,6" Pulgadas Eg2502la - Intel Core i5 - RAM 8GB - Disco SSD 512GB - Azul</p>
+                      </div>
+                    </a> </div>
+                   <h4 class="m_4"><a href="#">HP PAVILON</a></h4>
+                   <p class="m_5">Permanece conectado y productivo con el espectacular Portátil HP Pavilion! Increíble desempeño para que puedas hacer más y disfrutar del entretenimiento donde quiera que vayas. Entretenimiento excepcional que te proporciona su pantalla con microbordes y audio de B&O. Modo de espera moderno conectado para que estés actualizado con tu correo electrónico</p>
+				</div>
+				<div class="col-md-3 top_box">
+					<div class="view view-ninth"><a href="single.html">
+                    <img src="images/pic3.jpg" class="img-responsive" alt=""/>
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                      <div class="content">
+                        <h2>Computador ASUS Vivobook</h2>
+                        <p>16" Pulgadas X1605VA - Intel Core i7 - RAM 16GB - Disco SSD 512 GB - Negro</p>
+                      </div>
+                    </a> </div>
+                   <h4 class="m_4"><a href="#">ASUS Vivobook</a></h4>
+                   <p class="m_5">Todo es más fluido con el potente ASUS Vivobook 16, un portátil con funciones útiles y fáciles de usar que incluyen una bisagra plana de 180°, un protector de cámara web físico y teclas de función dedicadas para encender o apagar el micrófono.</p>
+				</div>
+				<div class="col-md-3 top_box1">
+					<div class="view view-ninth"><a href="single.html">
+                    <img src="images/pic4.jpg" class="img-responsive" alt=""/>
+                    <div class="mask mask-1"> </div>
+                    <div class="mask mask-2"> </div>
+                      <div class="content">
+                        <h2>Computador Portátil Gamer ACER NITRO</h2>
+                        <p>15.6" Pulgadas 50CH Intel Core i5 - RAM 16GB - Disco SSD 512GB - Negro</p>
+                      </div>
+                     </a> </div>
+                   <h4 class="m_4"><a href="#">ACER NITRO Gamer</a></h4>
+                   <p class="m_5">Acer te invita a disfrutar el Portátil gaming Nitro 5 diseñado para jugar, navegar, chatear, transmitir, editar y grabar sin perder el ritmo. Lleva tu experiencia de juego a otro nivel con nuestro increíble sonido más nítido gracias a sus altavoces que pueden emitir un entorno sonoro espacial en 3D, te permitirá escuchar de dónde vienen tus oponentes con una excelente precisión</p>
+				</div>
+			</div>
+		 </div>
+	    </div>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Promociones</h4>
+							<div class="footer_search">
+				    		   <form>
+				    			<input type="text" value="Ingrese su correo electronico" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Ingrese su correo electronico';}">
+				    			<input type="submit" value="Ir">
+				    		   </form>
+					        </div>
+						
+		   					
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+						<p>©  <a href="https://www.facebook.com/Anderson.conde.LH" target="_blank">TheConde</a></p>
+		            </div>
+					  <dl id="sample" class="dropdown">
+				       
+				        <dd>
+				             
+				         </dd>
+	   				  </dl>
+   				</div>
+			</div>
+		</div>
+</body>	
+</html>
